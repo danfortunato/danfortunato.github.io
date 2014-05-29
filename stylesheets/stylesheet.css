@@ -47,12 +47,19 @@ table {
 }
 
 /* LAYOUT STYLES */
+::selection {
+  background: #ffffff;
+}
+::-moz-selection {
+  background: #ffffff;
+}
+
 body {
   font-size: 1em;
   line-height: 1.5; 
   background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
   color: #6d6d6d;
 }
 
@@ -60,24 +67,26 @@ a {
   color: #d5000d;
 }
 a:hover {
-  color: #c5000c;
+  /*color: #c5000c;*/
+  color: #ffffff;
+  background-color: #D54451;
 }
 
 header {
   padding-top: 35px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 header h1 {
   font-family: /*'Chivo',*/ 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-size: 48px;
   color: #303030;
   line-height: 1.2;
 }
 
 header h2 {
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-size: 24px;
   color: #aaa;
   font-weight: normal;
@@ -322,6 +331,7 @@ footer a {
 }
 footer a:hover {
   color: #444;
+  background-color: transparent;
 }
 
 /* MISC */
