@@ -1,62 +1,141 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Dan Fortunato</title>
-  </head>
+	<head>
+		<title>Dan Fortunato</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<section id="header">
+			<header>
+				<span class="image avatar"><img src="images/dan.png" alt="" /></span>
+				<h1 id="logo"><a href="#">Dan Fortunato</a></h1>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#about" class="active">About</a></li>
+					<li><a href="#research">Research</a></li>
+					<li><a href="#papers">Papers</a></li>
+					<li><a href="#talks">Talks</a></li>
+					<li><a href="#software">Software</a></li>
+					<li><a href="#projects">Projects</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://github.com/danfortunato" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.instagram.com/danfortunato/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.linkedin.com/in/danielfortunato/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:dfortunato@g.harvard.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+		</section>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+		<div id="wrapper">
+			<div id="main">
+				<section id="about">
+					<div class="container">
+						<h2>About</h2>
+						<p>I'm a fourth-year graduate student in applied mathematics at Harvard University interested in numerical analysis and scientific computing. My advisors are professors <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a> and <a href="http://people.seas.harvard.edu/~chr/">Chris Rycroft</a>. My research focuses on spectral methods, fast methods for PDEs, computational fluid &amp; solid mechanics, and multigrid methods, and is funded by the <a href="https://ndseg.asee.org/">National Defense Science and Engineering Graduate Fellowship</a>. In the past, I have worked at <a href="https://disneyanimation.com/">Walt Disney Animation Studios</a>, <a href="http://www.lbl.gov/">Lawrence Berkeley National Laboratory</a>, <a href="http://www.wolfram.com/">Wolfram Research</a>, and <a href="https://www.apple.com/">Apple</a>.</p>
+					</div>
+				</section>
 
-        <header>
-          <h1>Dan Fortunato</h1>
-          <h2></h2>
-        </header>
+				<section id="research">
+					<div class="container">
+						<h2>Research</h2>
+						<div class="features">
+							<article>
+								<img class="image" src="images/snowflake.png" alt="" />
+								<div class="inner">
+									<h4>Spectral methods</h4>
+									<p>In collaboration with <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a>, I have developed spectrally accurate Poisson solvers for the square, cylinder, solid sphere, and cube that have optimal complexity (up to polylogarithmic factors). Our solver is based on the ultraspherical polynomials and the alternating direction implicit (ADI) method.</p>
+									<p>We are currently trying to extend our solver to an optimal complexity spectral \(hp\)-element method.</p>
+								</div>
+							</article>
+							<article>
+								<img class="image" src="images/fluid-solid.png" alt="" />
+								<div class="inner">
+									<h4>Computational fluid &amp; solid mechanics</h4>
+									<p>In collaboration with <a href="http://people.seas.harvard.edu/~chr/">Chris Rycroft</a> and <a href="http://math.lbl.gov/~saye/">Robert Saye</a>, I am developing a high-order Eulerian method for fluid&ndash;solid interaction based on the discontinuous Galerkin and level set methods.</p>
+								</div>
+							</article>
+							<article>
+								<img class="image" width="60%" src="images/multigrid.png" alt="" /></a>
+								<div class="inner">
+									<h4>Multigrid methods</h4>
+									<p>In collaboration with <a href="http://math.lbl.gov/~saye/">Robert Saye</a> and <a href="http://people.seas.harvard.edu/~chr/">Chris Rycroft</a>, I have developed efficient multigrid schemes for local discontinuous Galerkin methods that are robust with respect to mesh size and polynomial order. The method is based on coarsening the divergence and gradient operators separately.</p>
+									<p>In collaboration with <a href="https://www.disneyresearch.com/people/rasmus-tamstorf/">Rasmus Tamstorf</a>, <a href="http://grandmaster.colorado.edu/~stevem/">Steve McCormick</a>, and <a href="http://www.tobiasmjones.com/">Toby Jones</a>, I implemented an algebraic multigrid method for cloth simulation based on adaptive smoothed aggregation.</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
 
-<!--         <section id="downloads" class="clearfix">
-          <a href="https://github.com/danfortunato" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section> -->
+				<section id="papers">
+					<div class="container">
+						<h2>Papers</h2>
+						<ol reversed class="pdf-list">
+							<li>D. Fortunato, C. Rycroft, and R. Saye, <em>Efficient operator-coarsening multigrid schemes for local discontinuous Galerkin methods</em>, submitted to SIAM Journal on Scientific Computing, 2018. &nbsp; <a href="https://arxiv.org/abs/1808.05320" class="primary button small icon fa-download tight">PDF</a></li>
+							<li>D. Fortunato and A. Townsend, <em>Fast Poisson solvers for spectral methods</em>, submitted to SIAM Journal on Scientific Computing, 2017. &nbsp; <a href="https://arxiv.org/abs/1710.11259" class="primary button small icon fa-download tight">PDF</a></li>
+						</ol>
+					</div>
+				</section>
 
-        <hr>
+				<section id="talks">
+					<div class="container">
+						<h2>Talks</h2>
+						<ul class="pdf-list">
+							<li>Efficient geometric multigrid methods for discontinuous Galerkin discretizations <br> (<a href="http://www.icosahom2018.org/">ICOSAHOM 2018</a>) &nbsp; <a href="talks/MultigridLDG.pdf" class="primary button small icon fa-download tight">PDF</a></li>
+							<li>Fast and accurate element methods (2017) &nbsp; <a href="talks/ElementMethods.pdf" class="primary button small icon fa-download tight">PDF</a></li>
+							<li>A fast spectrally accurate Poisson solver on rectangular domains (<a href="https://archive.siam.org/meetings/cse17/">SIAM CSE 2017</a>) &nbsp; <a href="talks/FastSpectralPoisson.pdf" class="primary button small icon fa-download tight">PDF</a></li>
+						</ul>
+					</div>
+				</section>
 
-        <section id="main_content">
-          <h3>
-<a name="hey" class="anchor" href="#hey"><span class="octicon octicon-link"></span></a>Hey!</h3>
+				<section id="software">
+					<div class="container">
+						<h2>Software</h2>
+						<p>I contribute to a number of open source software projects:</p>
+						<ul>
+							<li><a href="http://www.chebfun.org/">Chebfun</a> — A MATLAB package for numerical computing with functions. I implemented the fast Poisson solver used in <code-lite>chebfun2.poisson</code-lite>.</li>
+							<li><a href="https://github.com/danfortunato/fast-poisson-solvers">fast-poisson-solvers</a> — A repository of fast spectrally accurate Poisson solvers on a variety of domains.</li>
+						</ul>
+					</div>
+				</section>
 
-<p>I'm a creative programmer and math nerd with a passion for music and design, living in Somerville, MA. I'm currently a graduate student at Harvard University pursuing my Ph.D. in applied mathematics. In the past I've held positions at <a href="http://wolfram.com/">Wolfram Research</a>, <a href="http://www.lbl.gov/"> Lawrence Berkeley National Laboratory</a>, <a href="http://apple.com/">Apple</a>, where I made <a href="https://www.youtube.com/watch?v=ZyT4YJQoUlg/">some new Photo Booth effects</a>.</p>
+				<section id="projects">
+					<div class="container">
+						<h2>Projects</h2>
+						<ul>
+							<li><a href="http://americansymphonyofsoul.com/">The American Symphony of Soul</a> — A funk and R&amp;B band I play drums in.</li>
+							<li><a href="http://wafflefriday.com/files/duckquest.html">Duck Quest?</a> — An 8-bit-style game about a mother duck trying to find her lost ducklings. Made by me and <a href="http://louiezong.com/">Louie Zong</a>.</li>
+						</ul>
+					</div>
 
-<h3>
-<a name="heres-some-cool-stuff-maybe" class="anchor" href="#heres-some-cool-stuff-maybe"><span class="octicon octicon-link"></span></a>Here's some cool stuff, maybe</h3>
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; <script type="text/javascript">document.write((new Date()).getFullYear())</script> Dan Fortunato</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+				</section>
+			</div>
+		</div>
 
-<ul>
-<li>
-<a href="http://wafflefriday.com/files/duckquest.html">Duck Quest?</a> &mdash; A nifty game about a mother duck trying to find her lost ducklings! Made by me and <a href="http://louiezong.com/">Louie Zong</a> at <a href="http://wafflefriday.com/">Waffle Friday Studios</a>.</li>
-</ul><h3>
-<a name="music" class="anchor" href="#music"><span class="octicon octicon-link"></span></a>Music</h3>
-
-<p>I play drums, and a bit of piano too!</p>
-
-<ul>
-<li>
-<a href="http://americansymphonyofsoul.com/">The American Symphony of Soul</a>, funk and R&amp;B</li>
-<li>
-<a href="http://summerfieldseptet.bandcamp.com/">The Andrew Summerfield Septet</a>, jazz</li>
-<li>
-<a href="http://danandlouie.bandcamp.com/">Dan and Louie</a>, goofy jazz</li>
-<li>
-<a href="http://dapper3.bandcamp.com/">JC &amp; The Dapper Three</a>, jazz standards</li>
-</ul>
-        </section>
-      </div>
-    </div>
-  </body>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML" async></script>
+	</body>
 </html>
