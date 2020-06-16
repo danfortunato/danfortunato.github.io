@@ -62,11 +62,12 @@
 						<h2>Research</h2>
 						<div class="features">
 							<article>
-								<img class="image" src="images/snowflake.png" alt="" />
+								<img class="image" style="padding-top:30px;" src="images/snowflake2.png" alt="" />
 								<div class="inner">
 									<h4>Spectral methods</h4>
-									<p>In collaboration with <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a>, I have developed spectrally accurate Poisson solvers for the square, cylinder, solid sphere, and cube that have optimal complexity (up to polylogarithmic factors). Our solver is based on the ultraspherical polynomials and the alternating direction implicit (ADI) method.</p>
-									<p>In collaboration with <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a> and <a href="http://appliedmaths.sun.ac.za/~nhale/">Nick Hale</a>, I have developed the ultraspherical spectral element method, a fast spectral \(hp\)-element method suitable for very high \(p\) using the hierarchical Poincare&ndash;Steklov method.</p>
+									<p>In collaboration with <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a> and <a href="http://appliedmaths.sun.ac.za/~nhale/">Nick Hale</a>, I have developed the ultraspherical spectral element method, a sparse spectral element method suitable for \(hp\)-adaptivity with very high \(p\). The method is based on the hierarchical Poincare&ndash;Steklov scheme and has a computational complexity of \(\mathcal{O}(p^4/h^3)\).</p>
+									<p>In collaboration with <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a>, I have developed spectrally accurate Poisson solvers for the square, cylinder, solid sphere, and cube that have optimal complexity (up to polylogarithmic factors). The solver is based on the ultraspherical polynomials and the alternating direction implicit (ADI) method.</p>
+
 								</div>
 							</article>
 							<article>
@@ -92,6 +93,7 @@
 					<div class="container">
 						<h2>Papers</h2>
 						<ol reversed class="pdf-list">
+							<li>D. Fortunato, N. Hale, and A. Townsend, <em>The ultraspherical spectral element method</em>, submitted (2020). &nbsp; <a href="papers/ultraSEM.pdf" class="primary button small icon fa-download tight">PDF</a></li>
 							<li>D. Fortunato, C. Rycroft, and R. Saye, <em>Efficient operator-coarsening multigrid schemes for local discontinuous Galerkin methods</em>, SIAM J. Sci. Comput., 41(6), A3913–A3937 (2019). &nbsp; <a href="https://arxiv.org/abs/1808.05320" class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a href="https://doi.org/10.1137/18M1206357" class="primary button small icon fa-external-link tight">DOI</a> &nbsp; <a href="papers/MultigridLDG.pdf" class="primary button small icon fa-download tight">PDF</a></li>
                             <li>D. Fortunato and A. Townsend, <em>Fast Poisson solvers for spectral methods</em>, IMA J. Numer. Anal. (2019) &nbsp; <a href="https://arxiv.org/abs/1710.11259" class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a href="https://academic.oup.com/imajna/advance-article/doi/10.1093/imanum/drz034/5621364?guestAccessKey=6af56c7b-48fa-4698-b519-a1fd754c2173" class="primary button small icon fa-external-link tight">DOI</a> &nbsp; <a href="papers/FastSpectralPoisson.pdf" class="primary button small icon fa-download tight">PDF</a></li>
                             <li>A. Mijailovic, B. Qing, D. Fortunato, and K. Van Vliet, <em>Characterizing viscoelastic mechanical properties of highly compliant polymers and biological tissues using impact indentation</em>, Acta Biomaterialia, 71 (2018), pp. 388-397. &nbsp; <a href="https://doi.org/10.1016/j.actbio.2018.02.017" class="primary button small icon fa-external-link tight">DOI</a> &nbsp; <a href="papers/ImpactIndentation.pdf" class="primary button small icon fa-download tight">PDF</a></li>
@@ -117,8 +119,10 @@
 						<h2>Software</h2>
 						<p>I contribute to a number of open source software projects:</p>
 						<ul>
-							<li><a href="http://www.chebfun.org/">Chebfun</a> — A MATLAB package for numerical computing with functions. I implemented the fast Poisson solver used in <code-lite>chebfun2.poisson</code-lite>.</li>
+							<li><a href="https://github.com/danfortunato/ultraSEM">ultraSEM</a> — An implementation of the ultraspherical spectral element method.</li>
 							<li><a href="https://github.com/danfortunato/fast-poisson-solvers">fast-poisson-solvers</a> — A repository of fast spectrally accurate Poisson solvers on a variety of domains.</li>
+							<li><a href="http://www.chebfun.org/">Chebfun</a> — A MATLAB package for numerical computing with functions. I implemented the fast Poisson solver used in <code-lite>chebfun2.poisson</code-lite>.</li>
+
 						</ul>
 					</div>
 				</section>
