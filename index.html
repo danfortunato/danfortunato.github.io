@@ -63,14 +63,25 @@
 						<h2>Research</h2>
 						<div class="features">
 							<article>
+								<!-- <div class="image">
+									<img class="image" style="max-width:70%; margin:auto;" src="images/cows3.png" alt="" />
+								</div> -->
+								<img class="image" style="" src="images/cows.png" alt="" />
+								<div class="inner">
+									<h4>Surface PDEs</h4>
+									<p>I have developed a high-order accurate fast direct solver for variable-coefficient partial differential equations on surfaces, based on spectral collocation and the hierarchical Poincare&ndash;Steklov scheme. The method may be used to accelerate implicit time-stepping schemes as repeated solves require only \(\mathcal{O}(N \log N)\) work on a mesh with \(N\) elements, after an \(\mathcal{O}(N^{3/2})\) precomputation. I have applied it to a range of scalar- and vector-valued problems on both smooth surfaces and surfaces with sharp corners and edges, including the static Laplace&ndash;Beltrami problem, the Hodge decomposition of a tangential vector field, and some time-dependent reaction–diffusion systems.</p>
+								</div>
+							</article>
+
+							<article>
 								<img class="image" style="padding-top:30px;" src="images/snowflake2.png" alt="" />
 								<div class="inner">
 									<h4>Spectral methods</h4>
 									<p>In collaboration with <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a> and <a href="http://appliedmaths.sun.ac.za/~nhale/">Nick Hale</a>, I have developed the ultraspherical spectral element method, a sparse spectral element method suitable for \(hp\)-adaptivity with very high \(p\). The method is based on the hierarchical Poincare&ndash;Steklov scheme and has a computational complexity of \(\mathcal{O}(p^4/h^3)\).</p>
 									<p>In collaboration with <a href="http://pi.math.cornell.edu/~ajt/">Alex Townsend</a>, I have developed spectrally accurate Poisson solvers for the square, cylinder, solid sphere, and cube that have optimal complexity (up to polylogarithmic factors). The solver is based on the ultraspherical polynomials and the alternating direction implicit (ADI) method.</p>
-
 								</div>
 							</article>
+
 							<article>
 								<img class="image" src="images/fluid-solid.png" alt="" />
 								<div class="inner">
@@ -78,6 +89,7 @@
 									<p>In collaboration with <a href="http://people.seas.harvard.edu/~chr/">Chris Rycroft</a> and <a href="http://math.lbl.gov/~saye/">Robert Saye</a>, I am developing a high-order Eulerian method for fluid&ndash;solid interaction based on the discontinuous Galerkin and level set methods.</p>
 								</div>
 							</article>
+
 							<article>
 								<img class="image" width="60%" src="images/multigrid.png" alt="" /></a>
 								<div class="inner">
